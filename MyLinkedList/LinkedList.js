@@ -34,9 +34,7 @@ class LinkedList {
             if (this.length === 1) {
                 return this.head;
             } else {
-                for (let i = 0; i < this.length; i++) {
-                    console.log(this.head)
-                }
+        
             }
         }
     }
