@@ -15,7 +15,7 @@ class LinkedList {
         this.head = null;
     }
 
-    addNode(value, next) {
+    addNode(value) {
         this.head = new Node(value, this.head);
         this.length++;
         return this;
@@ -34,8 +34,12 @@ class LinkedList {
             if (this.length === 1) {
                 return this.head;
             } else {
-                for (let i = 0; i < this.length; i++) {
-                    console.log(this.head)
+                let current = this.head;
+                while(current !== null) {
+                    if (current.value === value){
+                        return current.value;
+                    }
+                    current = this.head.next;
                 }
             }
         }

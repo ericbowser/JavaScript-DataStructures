@@ -37,5 +37,6 @@ test('finds a node in the LinkedList', () => {
     linkedList = linkedList.addNode(1);
     linkedList = linkedList.addNode(10);
 
-    linkedList.findNode(1);
+    const foundNode = linkedList.findNode(1);
+    expect(foundNode).toBe(1);
 })
